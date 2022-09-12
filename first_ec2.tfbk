@@ -1,0 +1,12 @@
+provider "aws" {
+  region     = "ap-south-1"
+  access_key = "AKIAQIHTTF2JDDJKW7UT"
+  secret_key = "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"
+
+}
+
+
+resource "aws_instance" "myec2" {
+  ami           = "ami-006d3995d3a6b963b"
+  instance_type = "t2.micro"
+}
